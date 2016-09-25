@@ -8,13 +8,34 @@
   <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <p style="z-index: 1;">how about this</p>
-  <div id="theatre">
-  	<em id="curtain-left"></em>
-  	<em id="curtain-right"></em>
-  	<p>Emmy Mania</p>
-  </div>
-  <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+
+  <!-- The parent component -->
+  <div class="curtain">
+
+    <!-- The component wrapper -->
+    <div class="curtain__wrapper">
+      <!-- The checkbox hack! -->
+      <input type="checkbox" checked>
+
+      <!-- The left curtain panel -->
+      <div class="curtain__panel curtain__panel--left">
+
+      </div> <!-- curtain__panel -->
+
+      <!-- The prize behind the curtain panels -->
+      <div class="curtain__prize">
+        <p style="color: white;">hello</p>
+      </div> <!-- curtain__prize -->
+
+      <!-- The right curtain panel -->
+      <div class="curtain__panel curtain__panel--right">
+
+      </div> <!-- curtain__panel -->
+
+    </div> <!-- curtain__wrapper -->
+
+  </div> <!-- curtain -->
+
 
   <!-- jQuery CDN -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
