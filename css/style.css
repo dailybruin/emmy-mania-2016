@@ -18,6 +18,8 @@
 }
 
 input[type=checkbox] {
+  top: 0;
+  left: 0;
   position: absolute; /* Force the checkbox at the start of the container */
   cursor: pointer; /* Indicate the curtain is clickable */
   width: 100%; /* The checkbox is as wide as the component */
@@ -60,4 +62,35 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   background-image: linear-gradient(90deg,  transparent 10%, rgba(255,255,255,.25) 50% ,transparent 65% );
   background-repeat: repeat;
   background-size: 80px;
+}
+
+.emmy-mania {
+  background: transparent;
+  color: white;
+  z-index: 3;
+  text-align: center;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.description {
+  margin-top: 5%;
+}
+
+.day-1-2 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.day-3-4 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+p {
+  color: white;
 }
