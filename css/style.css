@@ -1,6 +1,10 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
 .curtain {
   width: 100%; /* Ensures the component is the full screen width */
-  height: 100vh; /* We're using this for demo purposes */
+  height: 100vh;
   overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
 }
 
@@ -23,9 +27,10 @@ input[type=checkbox] {
   position: absolute; /* Force the checkbox at the start of the container */
   cursor: pointer; /* Indicate the curtain is clickable */
   width: 100%; /* The checkbox is as wide as the component */
-  height: 100%; /* The checkbox is as tall as the component */
+  height: 100%; /*The checkbox is as tall as the component */
   z-index: 100; /* Make sure the checkbox is on top of everything else */
   opacity: 0; /* Hide the checkbox */
+  margin: 0px;
 }
 
 /* When the checkbox is checked... */
@@ -51,7 +56,7 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 }
 
 .curtain__panel {
-  background: red;
+  background: blue;
   width: 50%; /* Each panel takes up half the container */
   height: 100vh; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
@@ -81,14 +86,13 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   margin-top: 5%;
 }
 
-.day-1-2 {
+.day {
   margin-top: 5%;
   text-align: center;
 }
 
-.day-3-4 {
-  margin-top: 5%;
-  text-align: center;
+.row {
+  margin: 0;
 }
 
 p {

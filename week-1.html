@@ -2,9 +2,44 @@
 <html>
 <head>
   <title>Emmy Mania Week 1</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <!-- Bootstrap CDN -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/article.css"/>
 </head>
 <body>
-  <p>hi</p>
+  <div id="emmy-mania-week-1">
+  </div>
+  <script id="handlebars-articles" type="text/x-handlebars-template">
+    <div class="row">
+      <h1 class="headline">{{gsx$headline.$t}}</h1>
+    </div>
+
+    <div class="row">
+      <a href="index.html">back</a>
+      <p class="date">{{gsx$date.$t}}</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p class="author">By {{gsx$author.$t}}</p>
+      </div>
+    </div>
+
+    <img class="main-image" src="{{gsx$mainimageurl.$t}}"/>
+    <div class="article-content">
+      {{{gsx$articlecontent.$t}}}
+    </div>
+  </script>
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Handlebars CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <!-- Our JS -->
+  <script src="js/main.js"></script>
+  <script>
+    articles();
+  </script>
 </body>
 </html>

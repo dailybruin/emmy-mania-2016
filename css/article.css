@@ -1,0 +1,23 @@
+p {
+  color: black;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.headline {
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+}
+
+.author {
+  text-alignt: center;
+}
