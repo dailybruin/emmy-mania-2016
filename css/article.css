@@ -2,22 +2,33 @@ p {
   color: black;
 }
 
-h1 {
-  margin: 0px;
-}
-
 .row {
   margin: 0px;
 }
 
 .headline {
   text-align: center;
+  margin: 20px;
 }
 
 .date {
   text-align: center;
 }
 
+#navigation {
+  text-align: center;
+}
+
 .author {
-  text-alignt: center;
+  text-align: center;
+}
+
+.main-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.article-content {
+  text-align: center;
 }
