@@ -1,4 +1,4 @@
-function articles() {
+function articles(index) {
   $.ajax({
     dataType: "json",
     url: "https://spreadsheets.google.com/feeds/list/1WrNJOuYK1NtCGonvwEpkIUF6XIBAZGw6xmKHuGKRn9Y/od6/public/values?alt=json",
@@ -8,10 +8,15 @@ function articles() {
       var source = $("#handlebars-articles").html();
       var template = Handlebars.compile(source);
 
-      var html = template(data[0]);
+      var html = template(data[index]);
       $("#emmy-mania-week-1").replaceWith(html);
     }
   });
+}
+
+function changeZIndex() {
+  document.getElementById("check").style.zIndex = 0;
+  document.getElementById("article-link").style.zIndex = 999;
 }
 
 $(document).ready(function() {
