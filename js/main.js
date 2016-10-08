@@ -16,7 +16,9 @@ function articles(index) {
 
 function changeZIndex() {
   document.getElementById("check").style.zIndex = 0;
-  document.getElementById("article-link").style.zIndex = 999;
+  document.getElementById("emmy-mania-changed").style.zIndex = 2;
+  document.getElementById("description-changed").style.zIndex = 2;
+  document.getElementById("article-link").style.zIndex = 2;
 }
 
 $(document).ready(function() {
