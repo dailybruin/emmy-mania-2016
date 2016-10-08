@@ -72,18 +72,28 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 .emmy-mania {
   margin: auto;
   background: transparent;
-  color: white;
   z-index: 3;
   text-align: center;
   position: absolute;
   display: block;
   width: 100%;
   margin-top: 5%;
+}
 
+#name {
+  color: rgb(255,215,0);
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+  font-size: 100px;
 }
 
 .description {
   margin-top: 15%;
+}
+
+.explainer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 
 .day {

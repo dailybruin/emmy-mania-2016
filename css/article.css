@@ -8,19 +8,34 @@ p {
 
 .headline {
   text-align: center;
-  margin: 20px;
+  padding-top: 5%;
+  width: 60%;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 .date {
+  margin-top: 4%;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 #navigation {
+  margin-top: 2%;
   text-align: center;
+}
+
+.arrow {
+  height: 20px;
+}
+
+.arrow:hover{
+  height: 18px;
 }
 
 .author {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-image {
@@ -29,6 +44,16 @@ p {
   margin-bottom: 10px;
 }
 
-.article-content {
+.image-caption {
+  font-size: 14px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.article-content {
+  margin-top: 5%;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 30px;
 }
