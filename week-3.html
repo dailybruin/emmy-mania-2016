@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emmy Mania Week 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/article.css"/>
+</head>
+<body>
+  <div id="emmy-mania-week-2">
+  </div>
+  <script id="handlebars-articles" type="text/x-handlebars-template">
+    <div class="row">
+      <h1 class="headline">{{gsx$headline.$t}}</h1>
+    </div>
+
+    <div class="row" id="navigation">
+      <div class="col-sm-3">
+        <a href="week-2.html">
+          <img class="arrow" src="img/back.svg" />
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <p class="date">{{gsx$date.$t}}</p>
+      </div>
+      <div class="col-sm-3">
+        <a href="week-4.html">
+          <img class="arrow" src="img/next.svg" />
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p class="author">By {{gsx$author.$t}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <img class="main-image" src="{{gsx$mainimageurl.$t}}"/>
+        <div class="image-caption">{{gsx$imagecaption.$t}}</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="article-content">
+          {{{gsx$articlecontent.$t}}}
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Handlebars CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <!-- Our JS -->
+  <script src="js/main.js"></script>
+  <script>
+    articles(2);
+  </script>
+</body>
+</html>

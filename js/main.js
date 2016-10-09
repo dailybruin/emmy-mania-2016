@@ -9,7 +9,10 @@ function articles(index) {
       var template = Handlebars.compile(source);
 
       var html = template(data[index]);
-      $("#emmy-mania-week-1").replaceWith(html);
+      var indexString = index.toString();
+      var idPlusIndex = "#emmy-mania-week-" + indexString;
+      console.log(idPlusIndex);
+      $(idPlusIndex).replaceWith(html);
     }
   });
 }
@@ -17,7 +20,6 @@ function articles(index) {
 function changeZIndex() {
   document.getElementById("check").style.zIndex = 0;
   document.getElementById("emmy-mania-changed").style.zIndex = 2;
-  document.getElementById("description-changed").style.zIndex = 2;
   document.getElementById("article-link").style.zIndex = 2;
 }
 
