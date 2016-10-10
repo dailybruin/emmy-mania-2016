@@ -98,12 +98,15 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 
 .day {
   margin-top: 10%;
-  background-color: lightblue;
+  background-color: rgb(255,215,0);
   padding-top: 1.5%;
   text-align: center;
   font-family: 'Muli', sans-serif;
   font-size: 20px;
   border-radius: 2px;
+  border-style: outset;
+  border-color: rgb(255,215,0);
+  border-width: 5px;
 }
 
 .day:hover {
@@ -115,7 +118,7 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 }
 
 .title {
-  color: black;
+  color: black  ;
   text-transform: uppercase;
   font-weight: bold;
 }
