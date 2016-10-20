@@ -18,6 +18,7 @@
     </div>
 
     <div class="row" id="navigation">
+      <div class="col-sm-12">
       <div class="col-sm-3">
         <a href="index.html">
           <img class="arrow" src="img/back.svg" />
@@ -32,25 +33,32 @@
         </a>
       </div>
     </div>
+    </div>
 
     <div class="row">
+      <div class="col-sm-12">
       <div class="col-sm-6 col-sm-offset-3">
         <p class="author">By {{gsx$author.$t}}</p>
       </div>
     </div>
+    </div>
 
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
+      <div class="col-sm-12">
+      <div class="col-sm-10 col-sm-offset-1">
         <img class="main-image" src="{{gsx$mainimageurl.$t}}"/>
         <div class="image-caption">{{gsx$imagecaption.$t}}</div>
+      </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
+      <div class="col-sm-12">
+      <div class="col-sm-10 col-sm-offset-1">
         <div class="article-content">
           {{{gsx$articlecontent.$t}}}
         </div>
+      </div>
       </div>
     </div>
   </script>

@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 p {
   color: black;
 }
@@ -59,9 +62,22 @@ p {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   line-height: 30px;
+  padding: 2%;
 }
 
 .credit {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+/*Mobile styling
+@media screen and (max-width: 209px) {
+
+}
+*/
+
+@media (min-width: 210px) and (max-width: 736px) {
+  .article-content {
+    font-size: 20px;
+  }
 }
