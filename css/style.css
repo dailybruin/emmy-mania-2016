@@ -109,8 +109,9 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   border-style: outset;
   border-color: rgb(255,215,0);
   border-width: 5px;
-  height:100px;
-  width: 200px;
+/*  height:100px;
+  width: 200px;*/
+
 }
 
 .day:hover {
@@ -133,6 +134,7 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 
 .row {
   margin: 0;
+  display: inline-block;
 }
 
 p {
@@ -140,10 +142,11 @@ p {
 }
 
 /*Mobile styling*/
-@media (min-width: 318px) and (max-width: 570px) {
+@media (min-width: 318px) and (max-width: 569px) {
   #name {
     font-size: 30px;
   }
+
   .explainer {
     text-align: center;
   }
@@ -155,12 +158,19 @@ p {
   }
 }
 
+@media screen and (min-width: 550px) and (max-width: 690px) {
+  #name {
+    font-size: 70px;
+  }
+
+  .day {
+    margin: auto;
+  }
+}
+
 @media (min-width: 766px) and (max-width: 1026px) {
   .explainer {
     text-align: center;
   }
 
-  .col-sm-2.col-sm-offset-3.day{
-    margin-left: 125px;
-  }
 }
