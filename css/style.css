@@ -109,8 +109,7 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   border-style: outset;
   border-color: rgb(255,215,0);
   border-width: 5px;
-  height: 100px;
-  width: 200px;
+  height: 100%;
 }
 
 .day:hover {
@@ -135,6 +134,10 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   margin: 0;
 }
 
+.col-sm-2 {
+  display: inline-block;
+}
+
 p {
   color: white;
 }
@@ -152,10 +155,24 @@ p {
   .day {
     margin: auto;
     font-size: 15px;
-    height: 70px;
   }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .row {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .col-sm-2.col-sm-offset-3.day {
+    margin-left: 40px;
+  }
+
+  .col-sm-2.col-sm-offset-2.day {
+    margin-left: 40px;
+  }
+}
 @media screen and (min-width: 550px) and (max-width: 688px) {
   #name {
     font-size: 70px;
@@ -163,12 +180,14 @@ p {
 
   .day {
     margin: auto;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 689px) and (max-width: 768px) {
   .day {
     margin: auto;
+    font-size: 14px;
   }
 }
 
@@ -179,7 +198,5 @@ p {
 
   .day {
     font-size: 14px;
-    width: 150px;
   }
-
 }
