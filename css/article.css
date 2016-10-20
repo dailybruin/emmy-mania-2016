@@ -70,14 +70,24 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-/*Mobile styling
-@media screen and (max-width: 209px) {
+@media screen and (max-width: 736px) {
+  .headline {
+    font-size: 22px;
+  }
 
-}
-*/
+  .date {
+    font-size: 16px;
+  }
 
-@media (min-width: 210px) and (max-width: 736px) {
-  .article-content {
-    font-size: 20px;
+  .author {
+    font-size: 16px;
+  }
+
+  .arrow {
+    height: 12px;
+  }
+
+  .arrow:hover {
+    height: 10px;
   }
 }
