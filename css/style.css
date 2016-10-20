@@ -140,7 +140,7 @@ p {
 }
 
 /*Mobile styling*/
-@media (min-width: 318px) and (max-width: 569px) {
+@media screen and (max-width: 569px) {
   #name {
     font-size: 30px;
   }
