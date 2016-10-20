@@ -134,68 +134,26 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
   margin: 0;
 }
 
-.col-sm-2 {
-  display: inline-block;
-}
-
 p {
   color: white;
 }
 
 /*Mobile styling*/
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 209px) {
+  #name {
+    font-size: 20px;
+  }
+}
+@media (min-width: 210px) and (max-width: 736px) {
   #name {
     font-size: 30px;
   }
-
-  .explainer {
-    text-align: center;
-  }
-
   .day {
-    margin: auto;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .row {
-    display: flex;
-    margin-top: 10px;
-  }
-}
-@media screen and (max-width: 569px) {
-  .col-sm-2.col-sm-offset-3.day {
-    margin-left: 40px;
-  }
-
-  .col-sm-2.col-sm-offset-2.day {
-    margin-left: 40px;
-  }
-}
-@media screen and (min-width: 550px) and (max-width: 688px) {
-  #name {
-    font-size: 70px;
-  }
-
-  .day {
-    margin: auto;
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 689px) and (max-width: 768px) {
-  .day {
-    margin: auto;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 766px) and (max-width: 1026px) {
-  .explainer {
-    text-align: center;
-  }
-
+@media (min-width: 737px) and (max-width: 1068px) {
   .day {
     font-size: 14px;
   }
